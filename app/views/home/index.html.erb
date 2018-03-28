@@ -21,6 +21,17 @@
     </tbody>
   </table>
 </script>
+<!-- demo root element -->
+<div id="demo">
+  <form id="search">
+    Search <input name="query" v-model="searchQuery">
+  </form>
+  <demo-grid
+  :data="gridData"
+  :columns="gridColumns"
+  :filter-key="searchQuery">
+  </demo-grid>
+</div>
 <%# / /! component template
 / script#grid-template type="text/x-template" 
 /   table
@@ -41,14 +52,3 @@
 /   demo-grid :columns="gridColumns" :data="gridData" :filter-key="searchQuery" 
  %>
 
-<!-- demo root element -->
-<div id="demo">
-  <form id="search">
-    Search <input name="query" v-model="searchQuery">
-  </form>
-  <demo-grid
-  :data="gridData"
-  :columns="gridColumns"
-  :filter-key="searchQuery">
-  </demo-grid>
-</div>

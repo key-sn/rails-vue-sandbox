@@ -21,10 +21,12 @@
     </tbody>
   </table>
 </script>
+<a href = "/todo">Todo管理ページ</a>
+<a href = "/task">Task管理ページ</a>
 <!-- demo root element -->
 <div id="demo">
   <form id="search">
-    Search <input name="query" v-model="searchQuery">
+    Search <input name="query" placeholder="search..." v-model="searchQuery">
   </form>
   <demo-grid
   :data="gridData"
@@ -32,8 +34,9 @@
   :filter-key="searchQuery">
   </demo-grid>
 </div>
+
 <%# / /! component template
-/ script#grid-template type="text/x-template" 
+/ script#grid-template type="text/x-template"
 /   table
 /     thead
 /       tr
@@ -49,6 +52,5 @@
 /   form#search
 /     | Search
 /     input name="query" v-model="searchQuery" /
-/   demo-grid :columns="gridColumns" :data="gridData" :filter-key="searchQuery" 
+/   demo-grid :columns="gridColumns" :data="gridData" :filter-key="searchQuery"
  %>
-

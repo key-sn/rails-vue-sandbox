@@ -1,0 +1,15 @@
+#todo {
+  .info {
+    color: #bbb;
+    font-size: 12px;
+    font-weight: normal;
+    }
+  ul {
+    // padding: 0;
+    list-style: none;
+    span.done {
+        text-decoration: line-through;
+        color: #bbb;
+    }
+  }
+}

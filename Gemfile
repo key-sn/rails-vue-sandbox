@@ -53,3 +53,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'webpacker'
 gem 'slim-rails'
+# materialize-sassのドキュメントによるとturbolinksを使う場合はjquery-turbolinksを入れたほうがいいらしい
+# gem 'jquery-turbolinks'
+
+gem 'materialize-sass'
+gem 'material_icons'

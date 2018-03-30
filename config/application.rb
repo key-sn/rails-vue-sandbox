@@ -16,7 +16,7 @@ module RailsVueSandbox
       g.javascripts false
       g.helper false
       g.template_engine :slim
-      g.test_framework :rspec, view_specs: false, helper_specs: false, fixture: false 
+      # g.test_framework :rspec, view_specs: false, helper_specs: false, fixture: false 
     end
   end
 end

@@ -1,0 +1,20 @@
+a href="/" Topに戻る
+#like-app
+  p Total Likes: {{ total }}
+  like-component message="Like" @increment="incrementTotal"
+  like-component message="Awesome" @increment="incrementTotal"
+  like-component message="Great" @increment="incrementTotal"
+  like-component @increment="incrementTotal"
+#todo.container
+  h1 My Todos
+  button @click="purge" 選択したものを削除
+  span class="info" = "({{ remaining.length }}/{{ todos.length }})"
+  ul
+    li v-for="(todo, index) in todos"
+      input type="checkbox" v-model="todo.isDone"
+      span :class="{done: todo.isDone}" = "{{ todo.title }}"
+      span @click="deleteItem(index)" class="command" [x]
+    li v-show="!todos.length" Nothing todo!
+  form @submit.prevent="addItem"
+  	input type="text" v-model="newItem"
+  	input type="submit" value="Add"

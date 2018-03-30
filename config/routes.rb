@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to: "home#index"
-  get '/about',   to: 'task#index'
-  get '/contact', to: 'task#index'
+  get '/task/about',   to: 'task#index'
+  get '/task/contact', to: 'task#index'
   resources :home
   resources :todo
   resources :task

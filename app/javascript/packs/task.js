@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from './router'
 import Header from './components/header.vue'
 
-var app = new Vue({
+new Vue({
   router: Router,
   el: '#task',
   components: {

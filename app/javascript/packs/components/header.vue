@@ -10,6 +10,7 @@
         <a href="/" class="brand-logo left">Todo Application</a>
         <ul class="right hide-on-med-and-down">
           <li><router-link to="/task">Top</router-link></li>
+          <!-- <li><router-link to="/hoge">hoge</router-link></li> -->
           <li><router-link to="/task/about">About</router-link></li>
           <li><router-link to="/task/contact">Contact</router-link></li>
         </ul>

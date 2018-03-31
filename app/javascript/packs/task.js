@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Router from './router'
+import Router from './router/router'
 import Header from './components/header.vue'
 
 new Vue({

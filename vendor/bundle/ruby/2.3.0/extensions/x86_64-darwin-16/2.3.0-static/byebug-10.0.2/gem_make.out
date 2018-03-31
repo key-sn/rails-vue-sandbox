@@ -1,0 +1,19 @@
+current directory: /Users/kei/projects/rails-vue-sandbox/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.2/ext/byebug
+/Users/kei/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180331-2671-16qac1q.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kei/projects/rails-vue-sandbox/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/kei/projects/rails-vue-sandbox/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+compiling locker.c
+compiling byebug.c
+compiling context.c
+compiling breakpoint.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/kei/projects/rails-vue-sandbox/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180331-2671-i58whj/byebug
